@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="content">
-     <div class="navbar">
+     <!--<div class="navbar">
       <img src="CSS/Images/logo.png" alt="" class="logo">
       <h2>ADMIN</h2>
       <nav>
@@ -21,8 +21,9 @@
             <li><a href="foreignerTickets.html" target="_blank">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
             <li><a href="Report.html">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
         </ul>
-      </nav>
-     </div>
+      </nav> 
+     </div> -->
+     <?php include('header.php') ?>
      <div class="container">
      <div class="bar">
       <div class="menu-l">
