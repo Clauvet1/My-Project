@@ -4,27 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>manage_Tickets</title>
+    <title>normalTickets</title>
     <link rel="stylesheet" href="CSS/n_ticket_style.css">
 </head>
-<body>
-    <div class="page">
-        <div class="navbar">
-            <img src="CSS/Images/logo.png" alt="" class="logo">
-            <h2>ADMIN</h2>
-            <nav>
-              <input type="text" placeholder="Search" title="Type in a category" id="search">
-              <ul>
-                  <li><a href="index.php" target="_blank">Dashboard</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-                  <li class="link2"><a href="#">Manage Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="normalTickets.html" target="_blank">Normal Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="foreignerTickets.html">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="Report.html">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-              </ul>
-            </nav>
-           </div>
-           <div class="n-content">
-            <h2>Manage Ticket</h2>
+    <body>
+        <div class="page">
+        <?php include('header.php') ?>
+        <div class="n-content">
+            <h2>New Ticket</h2>
             <div class="n-container">
                 <div class="row-1">
                     <div class="r1-col-1">
@@ -40,7 +27,7 @@
                 <div class="r1-col-2">
                     <div class="space">
                        <div class="div1"> <label>Ticket For</label></div>
-                        <select name="ticketFor"  class="t">
+                        <select name="ticketFor" id="ticketFor" class="t">
                             <option value="A_70_sitter_bus">A 70sitter bus</option>
                             <option value="A_30_sitter_bus">A 30sitter bus</option>
                             <option value="A_train">A train</option>
@@ -66,13 +53,13 @@
                         <tbody>
                             <tr>
                                 <td>Adult</td>
-                                <td><input type="text" placeholder="Enter price" class="t-input"></td>
-                                <td><input type="text" placeholder="Enter num of sits" class="t-input"></td>
+                                <td>1000.00</td>
+                                <td>2</td>
                             </tr>
                             <tr class="active-row">
                                 <td>Child</td>
-                                <td><input type="text" placeholder="Enter price" class="t-input"></td>
-                                <td><input type="text" placeholder="Enter num of sits" class="t-input"></td>
+                                <td>250.00</td>
+                                <td>1</td>
                             </tr>
                         </tbody>
                         </table>
@@ -91,19 +78,12 @@
                            <div class="div1"> <label>Change</label></div>
                             <input type="text" name="change" placeholder="Enter the change" class="t-space">
                         </div>
-                        
                     </div>
                 </div>
                 <div class="buttons">
                 <button>save</button><button>Delete</button>
             </div>
-            <div class="ticketType">
-            <label>Ticket_Type</label>
-            <select name="ticketType" class="ticketType1">
-                <option value="citizen">Citizen</option>
-                <option value="foreigner">Foreigner</option>
-            </select>
-            </div>
+            <h1>Citizen</h1>
             </div>
         </div>
         </div>
