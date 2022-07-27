@@ -85,6 +85,7 @@
             </div>
             <h1>Citizen</h1>
             </div>
+            <?php include('footer.php') ?>
         </div>
         </div>
 </body>

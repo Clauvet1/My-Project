@@ -87,7 +87,7 @@
             </div>
             <h1>Foreigner</h1>
             </div>
-        
+           <?php include('footer.php') ?>
         </div>
         </div>
 </body>
