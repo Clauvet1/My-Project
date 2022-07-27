@@ -1,1 +1,1 @@
-<footer>Copy Rights &copy; 2022 by Clauvet</footer>
+<footer class="footer">Copy Rights &copy; 2022 by Clauvet</footer>
