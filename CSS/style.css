@@ -21,14 +21,7 @@
     display: flex;
     color: white;
 }
-.link1{
-    background: rgba(235, 229, 229, 0.36);
-    padding-left: 2px;
-}
-.link5{
-    background: rgba(235, 229, 229, 0.36);
-    padding-left: 2px;
-}
+
 .logo{
     width: 70px;
     margin: 10px 20px;
@@ -223,7 +216,7 @@ nav ul li{
 .more-info_b:hover a{
     justify-content:space-evenly;
 }
-h3{
+.container_body h3{
     margin-top: 10px;
 }
 .arrow-d{
@@ -254,195 +247,13 @@ h3{
     bottom: 0%;
     left: 40%;
 }
-.page{
-    display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/banner.jpg);
+
+/* For login page */
+
+.l-container{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(Images/library.png);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    position: relative;
-}
-nav ul li{
-    margin: 20px 15px;
-    list-style: none;
-    cursor: pointer;
-}
-.navbar nav ul li .n-nav-arrow{
-    width: 10px;
-    display: none;
-}
-.navbar nav ul li:hover .n-nav-arrow{
-    display: block;
-}
-.navbar nav ul:hover li{
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.5s;
-
-}
-.n-logo{
-    width: 70px;
-    margin: 10px 20px;
-    cursor: pointer;
-}
-.n-navbar{
-    background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5));
-    flex-basis: 10%;
-  
-}
-a{
-  color: white;
-  text-decoration: none;
-}
-.n-navbar h2{
-    text-align: center;
-}
-#search{
-    padding: 4px 30px;
-    margin-top: 10px;
-}
-.n-content{
-    flex-basis: 80%;
-    position: relative;
-}
-.n-content h2{
-    padding: 0 30px 20px 20px;
-    border-bottom: 2px red solid;
-    margin: 20px 40px 40px 100px;
-    text-shadow: 2px 2px 4px #000;
-}
-.n-container{
-    color: black;
-    background-color: aliceblue;
-    position: absolute;
-    border-top: 3px blue solid;
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height: 75%;
-    left: 10%;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
-}
-.n-row-1{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0 180px 0;
-    border-bottom: #000 1px solid;
-  
-}
-.n-row-2{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    padding-bottom: 300px;
-    position: relative;
-    
-}
-.n-r1-col-1{
-   position: absolute;
-   padding: 0 310px 0 25px ;
-}
-.n-r1-col-2{
-    position: absolute;
-    padding: 0 310px 0 25px ;
-    right: 5%;
-}
-.n-r1-col-3{
-    position: absolute;
-    padding: 0 360px 0 25px ;
-    right: 5%;
-}
-.n-space{
-    margin: 20px 0 50px 0;
-}
-.n-div1{
-    padding: 5px;
-}
-.n-r1-col-1 .t-space{
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    border-radius: 2px;
-}
-.n-r1-col-2 .t-space{
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    border-radius: 2px;
-}
-.n-r1-col-2 .t{
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.n-r1-col-3 .t-space{
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    border-radius: 2px;
-}
-.n-styled-table{
-    border-collapse: collapse;
-    margin: 12px 0;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15);
-}
-.n-styled-table thead tr{
-    background-color: #009879;
-    color: #fff;
-    text-align: left;
-}
-.n-styled-table th,
-.n-styled-table td{
-    padding: 20px 38px;
-}
-.n-styled-table tbody tr{
-    border-bottom: 1px solid #ddd;
-}
-.n-styled-table tbody tr:nth-of-type(even){
-    background-color: #f3f3f3;
-}
-.n-styled-table tbody tr .active-row{
-    font-weight: bold;
-    color: #009879;
-}
-.n-buttons{
-    border-top: 1px black solid;
-    position: absolute;
-    bottom: 2px;
-    text-align-last: center;
-    width: 100%;
-}
-button{
-    border-radius: 5px;
-    padding: 5px 8px;
-    margin: 5px;
-    cursor: pointer;
-}
-.n-date{
-    cursor: pointer;
-    border-radius: 5px;
-}
-.n-container h1{
-    font-size: 50px;
-    text-transform: uppercase;
-    position:absolute ;
-    bottom: 15%;
-    right: 10%;
-    color: green;
-    text-shadow: 1px 1px 2px #000;
-}
-.n-ticketType{
-    position: absolute;
-    bottom: 100px;
-    right: 20px;
-}
-
-.n-t-input{
-    width: 100px;
 }
