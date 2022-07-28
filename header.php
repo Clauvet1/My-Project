@@ -9,6 +9,7 @@
                   <li><a href="normalTickets.php">Normal Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <li><a href="foreignerTickets.php">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <li><a href="Report.php">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+                  <li><a href="login.php">Logout</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
               </ul>
             </nav>
 </div>
