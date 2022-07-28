@@ -17,7 +17,7 @@
      <h2>Welcome</h2>
     </div>
      <div class="drop-link">
-      <h4>Administrator</h4>
+      <h4><a href="changepassword.php">Administrator</a></h4>
       <div class="drop-icon"><img src="CSS/Images/drop_down_menu1.png" class="arrow-d"></div>
      </div>
      </div>

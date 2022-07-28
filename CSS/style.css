@@ -137,7 +137,7 @@ nav ul li{
 
 .navbar{
     background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5));
-    flex-basis: 15%;  
+    flex-basis: 14%;  
 }
 .navbar h2{
     text-align: center;
@@ -242,7 +242,7 @@ nav ul li{
 }
 .footer{
     position: absolute;
-    color: red;
+    color: white;
     border: 1px blacksolid;
     bottom: 0%;
     left: 40%;
@@ -275,6 +275,7 @@ nav ul li{
 .l-space{
     padding: 11px 160px 11px 11px;
     border: none;
+    border-radius: 5px;
 }
 .user-icon{
     width: 200px;
@@ -298,7 +299,7 @@ nav ul li{
     margin-top: 3em;
     justify-content: space-around;
 }
-button{
+.l-content button{
    position: absolute;
     bottom: 2em;
     left: 1.2em;
@@ -321,4 +322,50 @@ a{
 .l-content h2{
     text-align: center;
     text-shadow: 2px 2px 4px black;
+}
+.p-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(14, 1, 1, 0.885), rgba(0, 0, 0, 0.54)), url(Images/banner.png);
+    color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    position: relative;
+}
+.p-content{
+    border: none;
+    width: 38%;
+    height: 50%;
+    position: absolute;
+    left: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(122, 122, 122);
+}
+.p-container h1{
+    padding: 20px 0 20px 0 ;
+    text-align: center;
+    border-bottom: 2px red solid;
+    margin: 0 60px 0 60px;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 100px 10px 100px;
+    color: lightblue;
+}
+.edits{
+ border: none;
+ margin:1em 7em 0 8em;
+}
+.names{
+    padding: 5px;
+}
+.p-content button{
+    position: absolute;
+    bottom: 10%;
+    right: 48%;
+    padding: 8px 15px 8px 15px;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
 }
