@@ -11,8 +11,8 @@
     <div class="p-container">
     <h1>Admin Account</h1>
     <div class="links">
-          <h2>Edit Profile</h2>
-          <h2>Change Password</h2>
+          <h2><a href="changePassword.php">Edit Profile</a></h2>
+          <h2><a href="editProfile.php">Change Password</a></h2>
          </div>
         <div class="p-content">
          <div class="edits">
