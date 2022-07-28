@@ -251,9 +251,40 @@ nav ul li{
 /* For login page */
 
 .l-container{
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(Images/library.png);
-    background-position: center;
-    background-size: cover;
     width: 100%;
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(Images/library.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.l-content{
+    border: 2px black solid;
+    width: 30%;
+    height: 70%;
+    background-color: lightgray;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.user-icon{
+    width: 200px;
+    margin-left: 8em;
+    mix-blend-mode:color-burn;
+}
+.l-icon{
+    width: 20px;
+    height: 20px;
+}
+.l-tick{
+    width: 15px;
+    height: 15px;
+}
+.l-row{
+    margin-left: 8em;
+}
+.l-button{
+    margin-left: 8em;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="l-conatiner">
+    <div class="l-container">
         <div class="l-content">
             <img src="CSS/Images/user.jpg" alt="user-icon" class="user-icon">
           <div class="l-row">
@@ -16,14 +16,14 @@
             <input type="text" name="userName" placeholder="Enter Username">
           </div>
           <div class="l-row">
-            <img src="CSS/Images/lock1.jpg" class="l-icon">
+            <img src="CSS/Images/lock.jpg" class="l-icon">
             <input type="password" name="password" placeholder="*********">
           </div>
           <div class="l-row">
             <a href="#"><img src="CSS/Images/tick.png" class="l-tick">Remember me</a>
             <a href="#">Forgot Password?</a>
           </div>
-          <div class="l-button"><button>Logi</button></div>
+          <div class="l-button"><button>Login</button></div>
           
         </div>
     </div>
