@@ -18,13 +18,13 @@
           </div>
           <div class="l-row">
             <img src="CSS/Images/lock.jpg" class="l-icon">
-            <input type="password" name="password" placeholder="*********" class="l-space">
+            <input type="password" name="password" placeholder="*******************" class="l-space">
           </div>
           <div class="lp-row">
             <a href="#"><input type="checkbox"> Remember me</a>
-            <a href="#">Forgot Password?</a>
+            <a href="recoverPassword.php">Forgot Password?</a>
           </div>
-         <button><a href="#">Login</a></button>
+         <button><a href="index.php">Login</a></button>
             </div>
     </div>
 </body>

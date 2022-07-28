@@ -11,24 +11,25 @@
     <div class="p-container">
     <h1>Admin Account</h1>
     <div class="links">
-          <h2><a href="changePassword.php">Edit Profile</a></h2>
-          <h2><a href="editProfile.php">Change Password</a></h2>
+          <h2><a href="editProfile.php">Edit Profile</a></h2>
+          <h2><a href="changePassword.php">Change Password</a></h2>
          </div>
-        <div class="p-content">
+        <form class="p-content">
          <div class="edits">
-          <div class="names">Current Password</div>
+          <label class="names">Current Password</label>
           <input type="password"  name="password" class="l-space" placeholder="***************">
          </div>
          <div class="edits">
-         <div class="names">New Password</div>
+         <label class="names">New Password</label>
           <input type="password"  name="password" class="l-space" placeholder="***************">
          </div>
          <div class="edits">
-         <div class="names">Confirm Password</div>
+         <label class="names">Confirm Password</label>
           <input type="password"  name="password" class="l-space" placeholder="***************">
          </div>
-         <button>save</button>
-        </div>
-        </div> 
+         <input type="submit" class="save" value="Password">
+</form>
+    </div>
+        
 </body>
 </html>
