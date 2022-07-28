@@ -11,19 +11,20 @@
     <div class="l-container">
         <div class="l-content">
             <img src="CSS/Images/user.jpg" alt="user-icon" class="user-icon">
+            <h2>ADMIN</h2>
           <div class="l-row">
             <img src="CSS/Images/personal.jpg" class="l-icon">
-            <input type="text" name="userName" placeholder="Enter Username">
+            <input type="text" name="userName" placeholder="Enter Username" class="l-space">
           </div>
           <div class="l-row">
             <img src="CSS/Images/lock.jpg" class="l-icon">
-            <input type="password" name="password" placeholder="*********">
+            <input type="password" name="password" placeholder="*********" class="l-space">
           </div>
-          <div class="l-row">
-            <a href="#"><img src="CSS/Images/tick.png" class="l-tick">Remember me</a>
+          <div class="lp-row">
+            <a href="#"><input type="checkbox"> Remember me</a>
             <a href="#">Forgot Password?</a>
           </div>
-          <div class="l-button"><button>Login</button></div>
+         <button><a href="#">Login</a></button>
           
         </div>
     </div>

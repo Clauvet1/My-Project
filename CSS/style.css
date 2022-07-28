@@ -257,18 +257,24 @@ nav ul li{
     background-size: cover;
     background-position: center;
     position: relative;
+    color: white;
 }
 .l-content{
-    border: red;
+    border: none;
     width: 30%;
     height: 70%;
-    background-color: lightgray;
+    background-color: rgb(178, 177, 177);
     position: absolute;
     left: 35%;
     top: 10%;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 2px 2px 2px black;
     
+}
+.l-space{
+    padding: 11px 160px 11px 11px;
+    border: none;
 }
 .user-icon{
     width: 200px;
@@ -276,16 +282,43 @@ nav ul li{
     mix-blend-mode:color-burn;
 }
 .l-icon{
-    width: 20px;
-    height: 20px;
-}
-.l-tick{
-    width: 15px;
-    height: 15px;
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: color-burn;
+  
 }
 .l-row{
-    margin-left: 8em;
+    display: flex;
+    margin: 1em 0 1em 2em;
+    border-radius: 5px;
 }
-.l-button{
-    margin-left: 8em;
+.lp-row{
+    margin-left: 1em;
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-around;
+}
+button{
+   position: absolute;
+    bottom: 2.5em;
+    left: 1em;
+    color: white;
+    background-color: blue;
+    font-size:xx-large;
+    padding: 5px 150px 5px 150px;
+    border: none;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.l-content a:hover{
+    color: rgb(211, 10, 10);
+}
+
+
+.l-content h2{
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
