@@ -299,7 +299,7 @@ a{
 .n-navbar h2{
     text-align: center;
 }
-#n-search{
+#search{
     padding: 4px 30px;
     margin-top: 10px;
 }
@@ -386,7 +386,7 @@ a{
     height: 25px;
     border-radius: 2px;
 }
-.styled-table{
+.n-styled-table{
     border-collapse: collapse;
     margin: 12px 0;
     min-width: 400px;
