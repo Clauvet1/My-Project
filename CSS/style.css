@@ -259,7 +259,7 @@ nav ul li{
     position: relative;
 }
 .l-content{
-    border:none;
+    border: red;
     width: 30%;
     height: 70%;
     background-color: lightgray;
