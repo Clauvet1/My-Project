@@ -22,9 +22,11 @@
           </div>
           <div class="lp-row">
             <a href="#"><input type="checkbox"> Remember me</a>
-            <a href="recoverPassword.php">Forgot Password?</a>
+            <a href="recoverPassword.php" target="_blank">Forgot Password?</a>
           </div>
          <button><a href="index.php">Login</a></button>
+         <h4><a href="editProfile">Signup</a></h4>
+
             </div>
     </div>
 </body>

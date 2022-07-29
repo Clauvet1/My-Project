@@ -105,16 +105,18 @@
     cursor: pointer;
 }
 .drop-link{
-    display: flex;
     cursor: pointer;
-    
+ 
 }
-.drop-link h4{
-    text-shadow: 2px 2px 4px #000;
+.drop{
+    display: none;
 }
-.drop-icon:hover .arrow-d{
+.drop-link:hover .drop{
     display: block;
-    
+}
+.drop-link:hover{
+ display: flex;
+ flex-direction: column;
 }
 
 nav ul li{
@@ -316,6 +318,12 @@ nav ul li{
     padding: 5px 150px 5px 150px;
     border: none;
     border-radius: 15px;
+}
+.l-content h4{
+    position: absolute;
+    bottom: 1.5em;
+    right: 3em;
+    color: red;
 }
 a{
     text-decoration: none;

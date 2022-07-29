@@ -17,8 +17,11 @@
      <h2>Welcome</h2>
     </div>
      <div class="drop-link">
-      <h4><a href="changePassword.php">Administrator</a></h4>
-      <div class="drop-icon"><img src="CSS/Images/drop_down_menu1.png" class="arrow-d"></div>
+      <h4><a href="changePassword.php">Administrator<img src="CSS/Images/drop_down_menu1.png" class="arrow-d"></a></h4>
+      <div class="drop">
+        <h4><a href="changePassword.php">Change Password</a></h4>
+        <h4><a href="editProfile.php">Edit Profile</a></h4>
+      </div>
      </div>
      </div>
      <div class="container_body">
