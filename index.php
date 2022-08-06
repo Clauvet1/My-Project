@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin_dashboard</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <div class="content">
@@ -36,10 +37,15 @@
       </div>
         <img src="CSS/Images/booking.png" class="div-image">
         </div>
-        <div class="more-info">
-          <a href="#" target="_blank"><p> More info</p>
-          <img src="CSS/Images/double_arrow.png" class="info-icon"></a>
+       <button id="btn">More info</button>
+
+       <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>something here</p>
         </div>
+       </div>
+
        </div>
        <div class="col-2">
         <div class="col-3row">
@@ -49,10 +55,7 @@
       </div>
         <img src="CSS/Images/packing.jpg" class="div-image">
         </div>
-        <div class="more-info">
-         <a href="#" target="_blank"><p> More info</p>
-          <img src="CSS/Images/double_arrow.png" class="info-icon"></a>
-        </div>
+        
        </div>
        <div class="col-3">
         <div class="col-3row">
@@ -62,23 +65,17 @@
       </div>
         <img src="CSS/Images/car-icon.jpg" class="div-image">
         </div>
-        <div class="more-info">
-         <a href="#" target="_blank"><p> More info</p>
-          <img src="CSS/Images/double_arrow.png" class="info-icon"></a>
-        </div>
+       
        </div>
        <div class="col-4">
         <div class="col-4row">
         <div>
         <h3>70</h3>
-        <p>Total &numero; <br> Indians Yesterday</p>
+        <p>Total &numero; <br>Indians Yesterday</p>
       </div>
         <img src="CSS/Images/people.jpg" class="div-image">
         </div>
-        <div class="more-info">
-        <a href="#" target="_blank"><p> More info</p>
-          <img src="CSS/Images/double_arrow.png" class="info-icon"></a>
-        </div>
+    
        </div>
       </div>
     </div>

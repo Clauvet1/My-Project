@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foreigner_Tickets</title>
     <link rel="stylesheet" href="CSS/n_ticket_style.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <div class="page">
 
            <?php include('header.php') ?>
            <div class="n-content">
-            <h2>New Ticket</h2>
+           <h2>New Ticket</h2>
             <div class="n-container">
                 <div class="row-1">
                     <div class="r1-col-1">

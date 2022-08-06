@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>manage_Tickets</title>
     <link rel="stylesheet" href="CSS/n_ticket_style.css">
+    <script src="menu.js"></script>
 </head>
 <body>
     <div class="page">
