@@ -221,7 +221,7 @@ button{
         height: 180vh;
     }
     .navbar{
-        display: none;
+        display: block;
     }
     .n-container{
         width: 100%;
