@@ -12,11 +12,7 @@
                   <li><a href="login.php">Logout</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
               </ul>
 
-              <div class="Hambuger">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-              </div
+ 
             </nav>
 </div>
           

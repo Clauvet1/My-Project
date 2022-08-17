@@ -43,7 +43,7 @@
                 <div class="row-2">
                     <div class="r1-col-1">
                     <div class="space">
-                        <table class="styled-table">
+                        <table class="n-styled-table">
                         <thead>
                             <tr>
                                 <th>Type</th>
@@ -65,7 +65,7 @@
                         </tbody>
                         </table>
                     </div>
-                    <div class="space">
+                    <div class="n-date">
                     <div class="div1"> <label>Date</label></div>
                         <input type="date" name="Date" class="date">
                     </div>

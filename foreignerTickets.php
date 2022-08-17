@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class="page">
-
            <?php include('header.php') ?>
            <div class="n-content">
            <h2>New Ticket</h2>
@@ -66,7 +65,7 @@
                         </tbody>
                         </table>
                     </div>
-                    <div class="space">
+                    <div class="n-date">
                     <div class="div1"> <label>Date</label></div>
                         <input type="date" name="Date" class="date">
                     </div>

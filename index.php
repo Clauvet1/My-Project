@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin_dashboard</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="menu.js"></script>
 </head>
 <body>
     <div class="content">
@@ -38,14 +37,6 @@
         <img src="CSS/Images/booking.png" class="div-image">
         </div>
        <button id="btn">More info</button>
-
-       <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>something here</p>
-        </div>
-       </div>
-
        </div>
        <div class="col-2">
         <div class="col-3row">
@@ -82,5 +73,6 @@
     <?php include('footer.php') ?>
     </div>
     </div>
+
 </body>
 </html>

@@ -58,9 +58,9 @@ a{
     position: relative;
 }
 .n-content h2{
-    padding: 0 30px 20px 20px;
+    padding: 0 100px 20px 20px;
     border-bottom: 2px red solid;
-    margin: 20px 40px 40px 100px;
+    margin: 20px 0 40px 50px;
     text-shadow: 2px 2px 4px #000;
 }
 .n-container{
@@ -69,6 +69,7 @@ a{
     position: absolute;
     border-top: 3px blue solid;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 85%;
     height: 75%;
@@ -78,6 +79,7 @@ a{
 }
 .row-1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px 0 180px 0;
     border-bottom: #000 1px solid;
@@ -85,6 +87,7 @@ a{
 }
 .row-2{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
     padding-bottom: 300px;
@@ -94,6 +97,7 @@ a{
 .r1-col-1{
    position: absolute;
    padding: 0 310px 0 25px ;
+   right: 55%;
 }
 .r1-col-2{
     position: absolute;
@@ -109,7 +113,8 @@ a{
     margin: 20px 0 50px 0;
 }
 .div1{
-    padding: 5px;
+    padding: 5px 160px 5px 5px;
+    
 }
 .r1-col-1 .t-space{
     position: absolute;
@@ -136,27 +141,34 @@ a{
     height: 25px;
     border-radius: 2px;
 }
+.n-styled-table,
 .styled-table{
     border-collapse: collapse;
     margin: 12px 0;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
+.n-styled-table thead tr,
 .styled-table thead tr{
     background-color: #009879;
     color: #fff;
     text-align: left;
 }
+.n-styled-table th,
+.n-styled-table td,
 .styled-table th,
 .styled-table td{
     padding: 20px 38px;
 }
+.n-styled-table tbody tr,
 .styled-table tbody tr{
     border-bottom: 1px solid #ddd;
 }
+.n-styled-table tbody tr:nth-of-type(even),
 .styled-table tbody tr:nth-of-type(even){
     background-color: #f3f3f3;
 }
+.n-styled-table tbody tr .active-row,
 .styled-table tbody tr .active-row{
     font-weight: bold;
     color: #009879;
@@ -202,4 +214,258 @@ button{
     border: 1px blacksolid;
     bottom : 0%;
     left: 40%;
+}
+
+@media only screen and (min-width: 340px) {
+    .page{
+        height: 180vh;
+    }
+    .navbar{
+        display: none;
+    }
+    .n-container{
+        width: 100%;
+        height: 130vh;
+        left: 5%;
+        position: absolute;
+        overflow: hidden;
+    }
+    .row-1{
+        padding-bottom: 25em;
+        
+    }
+    .div1{
+        padding-right: 160px;
+    }
+    .row-2{
+        padding-bottom: 30em;
+    }
+    
+    .r1-col-1{
+        padding: 0 280px 0 25px ;
+        position: absolute;
+       left: 0.2%;
+       margin-right: 4px ;
+      
+    }
+    .r1-col-2{
+        padding: 0 280px 0 25px ;
+        position: absolute;
+        left: 0.2%;
+        top: 18%;
+    }
+    .r1-col-3{
+        padding: 0 280px 0 25px ;
+        position: absolute;
+        left: 0.2%;
+        top: 40%;
+    }
+    .r1-col-3 .t-space{
+        width: 80%;
+    }
+    .r1-col-1 .t-space{
+        width: 80%;
+    }.r1-col-2 .t-space{
+        width: 80%;
+    }
+    .n-date{
+        position: absolute;
+        top: 160%;
+    }
+
+    .t-input{
+        width: 20px;
+    }
+    .n-container h1{ position: absolute; bottom: 5%;}
+
+   .n-styled-table,
+   .styled-table{ min-width: 60px; }
+
+   .n-styled-table th,
+   .n-styled-table td,
+   .styled-table th,
+   .styled-table td{ padding: 20px 23px;}
+}
+@media only screen and (min-width: 600px) {
+    .page{
+        height: 150vh;
+    }
+    .navbar{
+        display: none;
+    }
+    .n-container{
+        width: 100%;
+        height: 120vh;
+        left: 5%;
+        position: absolute;
+        overflow: hidden;
+    }
+    .row-1{
+        padding-bottom: 25em;
+        
+    }
+    .div1{
+        padding-right: 160px;
+    }
+    .row-2{
+        padding-bottom: 30em;
+    }
+    
+    .r1-col-1{
+        padding: 0 600px 0 25px ;
+        position: absolute;
+       left: 0.2%;
+       margin-right: 4px ;
+      
+    }
+    .r1-col-2{
+        padding: 0 250px 0 25px ;
+        position: absolute;
+        left: 0.2%;
+        top: 18%;
+    }
+    .r1-col-3{
+        padding: 0 300px 0 25px ;
+        position: absolute;
+        left: 0.2%;
+        top: 40%;
+    }
+    .r1-col-3 .t-space{
+        width: 80%;
+    }
+    .r1-col-1 .t-space{
+        width: 80%;
+    }.r1-col-2 .t-space{
+        width: 80%;
+    }
+    .n-date{
+        position: absolute;
+        top: 160%;
+    }
+
+    .t-input{
+        width: 80px;
+    }
+.n-styled-table,
+.styled-table{
+    min-width: 430px;
+}
+
+@media only screen and (min-width: 900px) {
+    .page{
+        height: 100vh;
+    }   
+    .n-content{
+        position: relative;
+    }
+    .navbar{
+        display: none;
+    }
+    .n-container{
+        width: 100%;
+        height: 78vh;
+        left: 10%;
+        position: absolute;
+    }
+    
+    .r1-col-1{
+       padding: 0 180px 0 25px ;
+    }
+    .r1-col-2{
+        padding: 0 180px 0 25px ;
+    }
+    .r1-col-3{
+        padding: 0 240px 0 25px ;
+    }
+
+    .t-input{
+        width: 30px;
+    }
+.n-styled-table,
+.styled-table{
+    min-width: 350px;
+}
+    .row-1{
+        padding: 5px 0 200px 0;
+    }
+    .row-2{
+        padding-bottom: 300px;
+    }
+    .r1-col-1{
+        position: absolute;
+        padding: 0 190px 0 25px ;
+    }
+    .r1-col-2{
+        position: absolute;
+        padding: 0 310px 0 25px ;
+       left: 50%;
+       top: 1.4%;
+    }
+    .div1{
+        width: 130px;
+    }
+    .r1-col-3{
+        position: absolute;
+        padding: 0 310px 0 25px ;
+       left: 50%;
+       top: 1.4%;
+    }
+    .r1-col-3 .t-space{
+        width: 100%;
+    }
+    .r1-col-1 .t-space{
+        width: 100%;
+    }.r1-col-2 .t-space{
+        width: 100%;
+    }
+    .n-date{
+        position: absolute;
+        top: 100%;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .navbar{
+        display: none;
+    }
+    .n-container{
+        width: 100%;
+        height: 78vh;
+        left: 10%;
+        position: absolute;
+    }
+    
+    .r1-col-1{
+       padding: 0 220px 0 25px ;
+    }
+    .r1-col-2{
+        padding: 0 220px 0 25px ;
+    }
+    .r1-col-3{
+        padding: 0 275px 0 25px ;
+    }
+
+    .t-input{
+        width: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 1250px) {
+    
+    .navbar{ display: block;}
+        .n-container{  width: 98%; left: 5%;}
+
+    .r1-col-1{
+       padding: 0 315px 0 25px ;
+    }
+    .r1-col-2{
+        padding: 0 280px 0 25px ;
+    }
+    .r1-col-3{
+        padding: 0 330px 0 25px ;
+    }
+    .t-input{  
+        width: 100px;
+    }
 }

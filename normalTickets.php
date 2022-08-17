@@ -64,7 +64,7 @@
                         </tbody>
                         </table>
                     </div>
-                    <div class="space">
+                    <div class="n-date">
                     <div class="div1"> <label>Date</label></div>
                         <input type="date" name="Date" class="date">
                     </div>
