@@ -9,7 +9,30 @@
 </head>
 <body>
     <div class="content_b">
-    <?php include('header.php') ?>
+      <div class="navbar">
+        <h2>ADMIN</h2>
+        <nav>
+          <ul class="menu-list">
+            
+              <li><a href="index.php">Dashboard</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="manageTickets.php">Manage Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="normalTickets.php">Normal Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="foreignerTickets.php">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="Report.html">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="login.php">Logout</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <div class="drop-link">
+                <h4><a href="changePassword.php">Change Password</a></h4>
+                <h4><a href="editProfile.php">Edit Profile</a></h4>
+             </div>
+          </ul>
+          <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+        </nav>
+</div>
      <div class="container">
      <div class="container_body">
       <h2>Reports</h2>
@@ -57,7 +80,7 @@
         <div class="col-4brow">
         <div>
         <h3>70</h3>
-        <p> Enter the number of days from today going back that you want to get the number <br> of tickets generated for</p>
+        <p> Enter the date you want to get the number <br> of tickets generated for</p>
       </div>
       <input type="text" placeholder="Enter number of days here" class="box">
         <img src="CSS/Images/ticket.jpg" class="div-image">
@@ -72,6 +95,25 @@
     <?php include('footer.php') ?>
     </div>
     </div>
+    <script>
+      const hambuger = document.querySelector('.hambuger');
+      const navMenu = document.querySelector('.menu-list');
+    
+      hambuger.addEventListener("click", mobileMenu);
+    
+      function mobileMenu() {
+        hambuger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    
+      const navLink = document.querySelectorAll('.nav-link');
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    
+      function closeMenu(){
+        hambuger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
     
 </body>
 </html>

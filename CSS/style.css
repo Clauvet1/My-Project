@@ -22,6 +22,17 @@
     color: white;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }     
+  .hambuger{
+    display: none;
+  }
 .logo{
     width: 70px;
     margin: 10px 20px;
@@ -39,22 +50,26 @@
     border-radius: 10px;
     background-color:rgb(109, 196, 16);
     position: relative;
+    margin-bottom: 20px;
 }
 
 .col-2{
     border: none;
     border-radius: 10px;
     background-color: rgb(9, 178, 158);
+    margin-bottom: 20px;
 }
 .col-3{
     border: none;
     border-radius: 10px;
     background-color: rgb(7, 198, 49);
+    margin-bottom: 20px;
 }
 .col-4{
     border: none;
     border-radius: 10px;
     background-color: rgb(6, 172, 108);
+    margin-bottom: 20px;
 }
 .col-4row{
     display: flex;
@@ -65,6 +80,7 @@
     border: none;
     border-radius: 10px;
     background-color: rgb(53, 9, 43);
+   
 }
 .col-4brow{
     display: flex;
@@ -92,7 +108,10 @@
     mix-blend-mode: multiply;
     margin-bottom: 10px;
 }
-.bar{
+.drop-link h4{
+    margin-bottom: 6px;
+}
+.n-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,7 +119,7 @@
     position: relative;
     padding-bottom: 20px;
 }
-.bar p{
+.n-bar p{
     position: absolute;
     right: 3%;
     cursor: pointer;
@@ -144,6 +163,7 @@ nav ul li{
 }
 .navbar h2{
     text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 #search{
     padding: 4px 30px;
@@ -208,7 +228,7 @@ nav ul li{
     mix-blend-mode: multiply;
 }
 .menu-l h2{
-    margin-top: 10px;
+    margin: 10px 0 0 50px;
     text-shadow: 2px 2px 4px #000;
 }
 .container a{
@@ -321,6 +341,36 @@ a{
     text-shadow: 2px 2px 4px black;
 }
 
+@media only screen and (max-width: 740px){
+   
+    .l-content{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 80vh;
+    }
+    .user-icon{
+        width: 10em;
+        position: absolute;
+        right: 33%;
+    }
+    .l-content h2{
+        position: absolute;
+        top: 32%;
+        right: 42%;
+    }
+    .down{
+        position: relative;
+        right: 2%;
+        top: 40%;
+    }
+    .l-content button{
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+    }
+}
+
 /* For edit profile and change password */
 
 
@@ -348,7 +398,7 @@ a{
     width: 38%;
     height: 75%;
     position: absolute;
-    left: 30%;
+    right: 30%;
     margin-top: 20px;
     border-radius: 10px;
     background-color: rgb(122, 122, 122);
@@ -391,6 +441,42 @@ a{
     color: white;
 }
 
+@media only screen and (max-width: 740px){
+    .p-container{
+        height: 140vh;
+    }
+    .e-content{
+        position: absolute;
+        right: 10%;
+        width: 80%;
+        height: 100vh;
+    }
+    .edits{
+        position: relative;
+        width: 60%;
+        right: 15%;
+    }
+    .l-space{
+        width: 100%;
+    }
+    
+    .p-content{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 100vh;
+    }
+    .edits{
+        position: relative;
+        width: 60%;
+        right: 15%;
+    }
+    .l-space{
+        width: 100%;
+    }
+
+}
+
 /* Recover password */
 
 .r-content{
@@ -407,17 +493,82 @@ a{
     left: 20%;
     top: 10%;
 }
-.y{
-    height: 30%;
-    position: relative;
-}
-@media only screen and (min-width: 340px) {
-    .navbar{
-        display: none;
-            }
-    .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-}
+
+@media only screen and (max-width: 740px) {  
+        .content{
+            position: relative;
+            height: 170vh;
+            width: 100%;
+        }
+        .content_b{
+            position: relative;
+            height: 160vh;
+            width: 100%;
+        }
+        .col-4b{
+            position: absolute;
+            right: 3%;
+            width: 90%;
+            bottom: 10%;
+        }
+        .navbar{
+            display: block;
+            z-index: 2;
+        }
+        .container{
+            width: 100%;
+            height: 120vh;
+            left: 10%;
+            position: absolute;
+        }
+        .row{
+            justify-content: space-around;
+            padding-bottom: 25em;
+            margin-right: 5em;
+        }
+        .navbar.active {
+         left: 0%;
+         }    
+         .navbar{
+            width: 3%;
+         }
+         .navbar ul{
+            display: block;
+            position: fixed;
+            left: -100%;
+            top: 4rem;
+            flex-direction: column;
+            background:linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7));
+            width: 100%;
+            height: 100vh;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.5s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+          }
+        
+          .navbar ul.active {
+            left: 0%;
+          }
+                 
+        .hambuger {
+            display: block;
+            cursor: pointer;
+          }
+        
+          .hambuger.active .bar:nth-child(2) {
+            opacity: 0;
+          }
+        
+          .hambuger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+          }
+        
+          .hambuger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+    
+
+

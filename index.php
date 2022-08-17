@@ -9,20 +9,36 @@
 </head>
 <body>
     <div class="content">
-      <?php include('header.php') ?>
+      <div class="navbar">
+        <h2>ADMIN</h2>
+        <nav>
+          
+          <ul class="menu-list">
+            <input type="text" placeholder="Search" title="Type in a category" id="search">
+              <li><a href="index.php" class="nav-link">Dashboard</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="manageTickets.php" class="nav-link">Manage Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="normalTickets.php" class="nav-link">Normal Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="foreignerTickets.php" class="nav-link">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="Report.html" class="nav-link">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <li><a href="login.php" class="nav-link">Logout</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+              <div class="drop-link">
+                  <h4><a href="changePassword.php">Change Password</a></h4>
+                  <h4><a href="editProfile.php">Edit Profile</a></h4>
+               </div>
+            </ul>
+          <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+</div>
+
      <div class="container">
-     <div class="bar">
+     <div class="n-bar">
       <div class="menu-l">
-      <a href="#" target="_blank"><img src="CSS/Images/menu3.png" alt="" class="menu-icon"></a>
      <h2>Welcome</h2>
     </div>
-     <div class="drop-link">
-      <h4><a href="changePassword.php">Administrator<img src="CSS/Images/drop_down_menu1.png" class="arrow-d"></a></h4>
-      <div class="drop">
-        <h4><a href="changePassword.php">Change Password</a></h4>
-        <h4><a href="editProfile.php">Edit Profile</a></h4>
-      </div>
-     </div>
      </div>
      <div class="container_body">
       <h2>Park Ticketing System</h2>
@@ -73,6 +89,25 @@
     <?php include('footer.php') ?>
     </div>
     </div>
+    <script>
+      const hambuger = document.querySelector('.hambuger');
+      const navMenu = document.querySelector('.menu-list');
+    
+      hambuger.addEventListener("click", mobileMenu);
+    
+      function mobileMenu() {
+        hambuger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    
+      const navLink = document.querySelectorAll('.nav-link');
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    
+      function closeMenu(){
+        hambuger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
 
 </body>
 </html>

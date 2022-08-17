@@ -12,6 +12,7 @@
         <div class="l-content">
             <img src="CSS/Images/user.jpg" alt="user-icon" class="user-icon">
             <h2>ADMIN</h2>
+            <div class="down">
           <div class="l-row">
             <img src="CSS/Images/personal.jpg" class="l-icon">
             <input type="text" name="userName" placeholder="Enter Username" class="l-space">
@@ -24,9 +25,9 @@
             <a href="#"><input type="checkbox"> Remember me</a>
             <a href="recoverPassword.php" target="_blank">Forgot Password?</a>
           </div>
+          </div>
          <button><a href="index.php">Login</a></button>
          <h4><a href="editProfile">Signup</a></h4>
-
             </div>
     </div>
 </body>

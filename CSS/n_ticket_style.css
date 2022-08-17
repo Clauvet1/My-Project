@@ -55,7 +55,8 @@ a{
 }
 .n-content{
     flex-basis: 80%;
-    position: relative;
+    position: absolute;
+    right: 8%;
 }
 .n-content h2{
     padding: 0 100px 20px 20px;
@@ -216,12 +217,21 @@ button{
     left: 40%;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }     
+  .hambuger{
+    display: none;
+  }
+
 @media only screen and (min-width: 340px) {
     .page{
         height: 180vh;
-    }
-    .navbar{
-        display: block;
     }
     .n-container{
         width: 100%;
@@ -285,13 +295,58 @@ button{
    .n-styled-table td,
    .styled-table th,
    .styled-table td{ padding: 20px 23px;}
+
+   .navbar{
+    display: block;
+    z-index: 2;
+    }
+    .navbar.active {
+        left: 0%;
+        }    
+        .navbar{
+           width: 3%;
+        }
+        .navbar ul{
+           display: block;
+           position: fixed;
+           left: -100%;
+           top: 4rem;
+           flex-direction: column;
+           background:linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7));
+           width: 100%;
+           height: 100vh;
+           border-radius: 10px;
+           text-align: center;
+           transition: 0.5s;
+           box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+           z-index: 2;
+         }
+       
+         .navbar ul.active {
+           left: 0%;
+         }
+                
+       .hambuger {
+           display: block;
+           cursor: pointer;
+         }
+       
+         .hambuger.active .bar:nth-child(2) {
+           opacity: 0;
+         }
+       
+         .hambuger.active .bar:nth-child(1) {
+           transform: translateY(8px) rotate(45deg);
+         }
+       
+         .hambuger.active .bar:nth-child(3) {
+           transform: translateY(-8px) rotate(-45deg);
+         }
+
 }
 @media only screen and (min-width: 600px) {
     .page{
         height: 150vh;
-    }
-    .navbar{
-        display: none;
     }
     .n-container{
         width: 100%;
@@ -346,11 +401,11 @@ button{
     .t-input{
         width: 80px;
     }
-.n-styled-table,
-.styled-table{
+    .n-styled-table,
+    .styled-table{
     min-width: 430px;
+    }
 }
-
 @media only screen and (min-width: 900px) {
     .page{
         height: 100vh;
@@ -358,9 +413,7 @@ button{
     .n-content{
         position: relative;
     }
-    .navbar{
-        display: none;
-    }
+    
     .n-container{
         width: 100%;
         height: 78vh;
@@ -425,9 +478,7 @@ button{
 }
 
 @media only screen and (min-width: 1060px) {
-    .navbar{
-        display: none;
-    }
+    
     .n-container{
         width: 100%;
         height: 78vh;
@@ -451,9 +502,8 @@ button{
 }
 
 
-@media only screen and (min-width: 1250px) {
-    
-    .navbar{ display: block;}
+@media only screen and (min-width: 1850px) {
+
         .n-container{  width: 98%; left: 5%;}
 
     .r1-col-1{
@@ -467,5 +517,11 @@ button{
     }
     .t-input{  
         width: 100px;
+    }
+    .hambuger{
+        display: none;
+    }
+    .navbar{
+        display: block;
     }
 }

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foreigner_Tickets</title>
     <link rel="stylesheet" href="CSS/n_ticket_style.css">
-    <script src="menu.js"></script>
+    
 </head>
 <body>
     <div class="page">
-           <?php include('header.php') ?>
+   <?php include('header.php') ?>
            <div class="n-content">
            <h2>New Ticket</h2>
             <div class="n-container">
@@ -90,5 +90,24 @@
            <?php include('footer.php') ?>
         </div>
         </div>
+        <script>
+            const hambuger = document.querySelector('.hambuger');
+            const navMenu = document.querySelector('.menu-list');
+          
+            hambuger.addEventListener("click", mobileMenu);
+          
+            function mobileMenu() {
+              hambuger.classList.toggle("active");
+              navMenu.classList.toggle("active");
+            }
+          
+            const navLink = document.querySelectorAll('.nav-link');
+            navLink.forEach((n) => n.addEventListener("click", closeMenu));
+          
+            function closeMenu(){
+              hambuger.classList.remove("active");
+              navMenu.classList.remove("active");
+            }
+          </script>
 </body>
 </html>
