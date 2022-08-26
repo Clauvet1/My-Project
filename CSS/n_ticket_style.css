@@ -12,6 +12,7 @@
     background-position: center;
     color: white;
     position: relative;
+    overflow: hidden;
 }
 
 nav ul li{
@@ -210,7 +211,7 @@ button{
     width: 100px;
 }
 .footer{
-    position: absolute;
+    position: fixed;
     color: white;
     border: 1px blacksolid;
     bottom : 0%;
@@ -229,16 +230,24 @@ button{
     display: none;
   }
 
-@media only screen and (min-width: 340px) {
+@media only screen and (min-width: 300px) {
     .page{
         height: 180vh;
     }
+    .footer{
+        position: absolute;
+        left: 15%;
+        top: 70em;
+    }
     .n-container{
         width: 100%;
-        height: 130vh;
+        height: 145vh;
         left: 5%;
         position: absolute;
         overflow: hidden;
+    }
+    .n-container h1{
+        font-size:x-large;
     }
     .row-1{
         padding-bottom: 25em;
@@ -346,11 +355,11 @@ button{
 }
 @media only screen and (min-width: 600px) {
     .page{
-        height: 150vh;
+        height: 165vh;
     }
     .n-container{
         width: 100%;
-        height: 120vh;
+        height: 140vh;
         left: 5%;
         position: absolute;
         overflow: hidden;
@@ -405,10 +414,15 @@ button{
     .styled-table{
     min-width: 430px;
     }
+    .footer{
+        position: absolute;
+        left: 15%;
+        top: 66.2em;
+    }
 }
 @media only screen and (min-width: 900px) {
     .page{
-        height: 100vh;
+        height: 115vh;
     }   
     .n-content{
         position: relative;
@@ -416,9 +430,13 @@ button{
     
     .n-container{
         width: 100%;
-        height: 78vh;
+        height: 84vh;
         left: 10%;
         position: absolute;
+    }
+    .n-container h1{
+        position: absolute;
+        bottom: 8%;
     }
     
     .r1-col-1{
@@ -475,6 +493,11 @@ button{
         position: absolute;
         top: 100%;
     }
+    .footer{
+        position: absolute;
+        left: 45%;
+        top: 44.2em;
+    }
 }
 
 @media only screen and (min-width: 1060px) {
@@ -525,3 +548,15 @@ button{
         display: block;
     }
 }
+
+.footer .social-links{
+    text-align: center;
+    background: linear-gradient(rgb(189, 189, 189),rgb(54, 54, 54));
+    border-radius: 25px;
+  }
+  .footer .social-links img{
+      width: 15px;
+      height: 20px;
+      margin: 10px 20px 0 20px;
+      cursor: pointer;
+  }

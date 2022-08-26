@@ -8,7 +8,7 @@
                   <li><a href="manageTickets.php" class="nav-link">Manage Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <li><a href="normalTickets.php" class="nav-link">Normal Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <li><a href="foreignerTickets.php" class="nav-link">Foreigner Ticket</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="Report.html" class="nav-link">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
+                  <li><a href="Report.php" class="nav-link">Reports</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <li><a href="login.php" class="nav-link">Logout</a><img src="CSS/Images/arrow.png" class="nav-arrow"></li>
                   <div class="drop-link">
                       <h4><a href="changePassword.php">Change Password</a></h4>
@@ -22,4 +22,4 @@
               </div>
             </nav>
     </div>
-          
+         

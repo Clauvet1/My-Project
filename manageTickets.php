@@ -14,6 +14,8 @@
     <div class="n-content">
             <h2>Manage Ticket</h2>
             <div class="n-container">
+                
+                <form action="connect.php" method="POST">
                 <div class="row-1">
                     <div class="r1-col-1">
                 <div class="space">
@@ -92,6 +94,7 @@
                 <option value="foreigner">Foreigner</option>
             </select>
             </div>
+                </form>
             </div>
             <?php include('footer.php') ?>
         </div>

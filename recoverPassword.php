@@ -10,7 +10,7 @@
 <body>
     <div class="r-content">
       <div class="y">
-    <form action="">
+    <form action="connect.php" method="POST">
             <input type="email" class="email" name="email" placeholder="Enter the email you used when creating this account">
         <input type="submit" class="save" value="send">
         </form>

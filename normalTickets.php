@@ -13,6 +13,8 @@
         <div class="n-content">
             <h2>New Ticket</h2>
             <div class="n-container">
+                 
+            <form action="connect.php" method="post">
                 <div class="row-1">
                     <div class="r1-col-1">
                 <div class="space">
@@ -28,9 +30,9 @@
                     <div class="space">
                        <div class="div1"> <label>Ticket For</label></div>
                         <select name="ticketFor" id="ticketFor" class="t">
-                            <option value="A_70_sitter_bus">A 70sitter bus</option>
-                            <option value="A_30_sitter_bus">A 30sitter bus</option>
-                            <option value="A_train">A train</option>
+                            <option value="70_sitter">A 70sitter bus</option>
+                            <option value="30_sitter">A 30sitter bus</option>
+                            <option value="train">A train</option>
                         </select>
                     </div>
                     <div class="space">
@@ -84,6 +86,7 @@
                 <button>save</button><button>Delete</button>
             </div>
             <h1>Citizen</h1>
+                </form>
             </div>
             <?php include('footer.php') ?>
         </div>

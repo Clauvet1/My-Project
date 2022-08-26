@@ -10,16 +10,17 @@
 <body>
     <div class="l-container">
         <div class="l-content">
-            <img src="CSS/Images/user.jpg" alt="user-icon" class="user-icon">
+          <form action="connect.php" method="POST">
+            <img src="CSS/Images/user.jpg" alt="user-icon"  class="user-icon">
             <h2>ADMIN</h2>
             <div class="down">
           <div class="l-row">
             <img src="CSS/Images/personal.jpg" class="l-icon">
-            <input type="text" name="userName" placeholder="Enter Username" class="l-space">
+            <input type="text" name="userName" id="userName" placeholder="Enter Username" class="l-space">
           </div>
           <div class="l-row">
             <img src="CSS/Images/lock.jpg" class="l-icon">
-            <input type="password" name="password" placeholder="*******************" class="l-space">
+            <input type="password" name="password" id="password" placeholder="*******************" class="l-space">
           </div>
           <div class="lp-row">
             <a href="#"><input type="checkbox"> Remember me</a>
@@ -28,6 +29,7 @@
           </div>
          <button><a href="index.php">Login</a></button>
          <h4><a href="editProfile">Signup</a></h4>
+          </form>
             </div>
     </div>
 </body>

@@ -14,7 +14,7 @@
           <h2><a href="editProfile.php">Edit Profile</a></h2>
           <h2><a href="changePassword.php">Change Password</a></h2>
          </div>
-        <form class="e-content">
+        <form class="e-content" action="connectto.php" method="POST">
             <div class="edits">
                 <label>Profile Photo:</label>
                 <input type="file" id="image" name="profilePhoto" placeholder="photo">
@@ -33,7 +33,7 @@
          </div>
          <div class="edits">
          <label class="names">My Bio</label>
-          <input type="text"  name="myBio" class="ll-space" placeholder="write about your self, for example your skills">
+          <input type="textarea" name="myBio" class="ll-space" placeholder="write about your self, for example your skills">
          </div>
          <input type="submit" class="save" value="Registration">
 </form>
