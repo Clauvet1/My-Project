@@ -6,12 +6,33 @@
 .content{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(Images/banner.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(Images/banner.png);
     background-size: cover;
     background-position: center;
     display: flex;
     color: white;
 }
+.content_b{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2)), url(Images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }     
+  .hambuger{
+    display: none;
+  }
 .logo{
     width: 70px;
     margin: 10px 20px;
@@ -28,26 +49,45 @@
     border: none;
     border-radius: 10px;
     background-color:rgb(109, 196, 16);
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .col-2{
     border: none;
     border-radius: 10px;
     background-color: rgb(9, 178, 158);
+    margin-bottom: 20px;
 }
 .col-3{
     border: none;
     border-radius: 10px;
     background-color: rgb(7, 198, 49);
+    margin-bottom: 20px;
 }
 .col-4{
     border: none;
     border-radius: 10px;
     background-color: rgb(6, 172, 108);
+    margin-bottom: 20px;
 }
 .col-4row{
     display: flex;
     padding: 10px 10px;
+}
+.col-4b{
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(53, 9, 43);
+   
+}
+.col-4brow{
+    display: flex;
+    padding: 10px 10px;
+    margin-bottom: 3em;
+    position: relative;
+    padding-bottom: 8em;
 }
 .col-3row{
     display: flex;
@@ -68,24 +108,41 @@
     mix-blend-mode: multiply;
     margin-bottom: 10px;
 }
-.bar{
+.drop-link h4{
+    margin-bottom: 6px;
+}
+.n-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(rgb(139, 177, 227), rgb(52, 115, 178));
     position: relative;
+    padding-bottom: 20px;
 }
-.bar p{
+.n-bar p{
     position: absolute;
     right: 3%;
     cursor: pointer;
 }
-.bar p:hover a{
-    color: blue;
+.drop-link{
+    cursor: pointer;
+ 
 }
+.drop{
+    display: none;
+}
+.drop-link:hover .drop{
+    display: block;
+}
+.drop-link:hover{
+ display: flex;
+ flex-direction: column;
+}
+
 nav ul li{
     margin: 20px 15px;
     list-style: none;
+    cursor: pointer;
 }
 .navbar nav ul li .nav-arrow{
     width: 10px;
@@ -96,16 +153,17 @@ nav ul li{
 }
 .navbar nav ul:hover li{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     transition: 0.5s;
 }
 
 .navbar{
-    background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5));
-    flex-basis: 15%;  
+    background:linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7));
+    flex-basis: 14%;  
 }
 .navbar h2{
     text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 #search{
     padding: 4px 30px;
@@ -113,6 +171,8 @@ nav ul li{
 }
 .container_body h2{
     border-bottom: 2px red solid;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px black;
 }
 .container{
     flex: 2;
@@ -131,7 +191,7 @@ nav ul li{
     justify-content: space-between;
 }
 .menu-l .menu-icon{
-    margin: 5px 10px 0 3px;
+    margin: 2px 10px 0 3px;
     mix-blend-mode: multiply;
     width: 40px;
     height: 25px;
@@ -139,28 +199,37 @@ nav ul li{
 .menu-l a{
     cursor: pointer;
 }
-.more-info a{
+ 
+.more-info_b a{
     display: flex;
-    background: linear-gradient( rgb(0, 255, 162), rgb(101, 101, 207));
+    background: linear-gradient( rgb(0, 153, 255), rgb(0, 170, 255));
     justify-content:center;
     border-radius: 0 0 10px 10px;
     list-style: none;
     text-decoration: none;
     padding: 5px 0;
 }
-.more-info img{
-    width: 20px;
+.more-info_b img{
+    width: 15px;
     mix-blend-mode: multiply;
+    
 }
-h3{
+.more-info_b:hover img{
+    display: block;
+}
+.more-info_b:hover a{
+    justify-content:space-evenly;
+}
+.container_body h3{
     margin-top: 10px;
 }
 .arrow-d{
     width: 15px;
     mix-blend-mode: multiply;
 }
-h2{
-    margin-top: 10px;
+.menu-l h2{
+    margin: 10px 0 0 50px;
+    text-shadow: 2px 2px 4px #000;
 }
 .container a{
     text-decoration: none;
@@ -170,3 +239,353 @@ h2{
     text-decoration: none;
     color: white;
 }
+.box{
+  position: absolute;
+  bottom: 0%;
+  padding: 10px;
+}
+.footer{
+    position: absolute;
+    color: white;
+    border: 1px blacksolid;
+    bottom: 0%;
+    left: 40%;
+}
+
+.footer .social-links{
+    text-align: center;
+    background: linear-gradient(rgb(189, 189, 189),rgb(54, 54, 54));
+    border-radius: 25px;
+  }
+  .footer .social-links img{
+      width: 15px;
+      height: 20px;
+      margin: 10px 20px 0 20px;
+      cursor: pointer;
+  }
+
+/* For login page */
+
+.l-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(Images/library.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+.l-content{
+    border: none;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(178, 177, 177);
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px black;
+    
+}
+.l-space{
+    padding: 11px 5px 11px 11px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+.ll-space{
+    padding: 11px 0px 150px 11px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.user-icon{
+    width: 200px;
+    margin-left: 8em;
+    mix-blend-mode:darken;
+}
+.l-icon{
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: darken;
+  
+}
+.l-row{
+    display: flex;
+    margin: 1em 0 1em 2em;
+    border-radius: 5px;
+}
+.lp-row{
+    margin-left: 1em;
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-around;
+}
+.l-content button{
+   position: absolute;
+    bottom: 2em;
+    left: 1.2em;
+    color: white;
+    background-color: blue;
+    font-size:xx-large;
+    padding: 5px 150px 5px 150px;
+    border: none;
+    border-radius: 15px;
+}
+.l-content h4{
+    position: absolute;
+    bottom: 1.5em;
+    right: 3em;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.l-content a:hover{
+    color: rgb(211, 10, 10);
+}
+
+
+.l-content h2{
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+@media only screen and (max-width: 740px){
+   
+    .l-content{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 80vh;
+    }
+    .user-icon{
+        width: 10em;
+        position: absolute;
+        right: 33%;
+    }
+    .l-content h2{
+        position: absolute;
+        top: 32%;
+        right: 42%;
+    }
+    .down{
+        position: relative;
+        right: 2%;
+        top: 40%;
+    }
+    .l-content button{
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+    }
+}
+
+/* For edit profile and change password */
+
+
+.p-container{
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to right, rgba(14, 1, 1, 0.885), rgba(0, 0, 0, 0.54)), url(Images/banner.png);
+    color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    position: relative;
+}
+.p-content{
+    border: none;
+    width: 38%;
+    height: 50%;
+    position: absolute;
+    left: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(122, 122, 122);
+    box-shadow: 2px 2px 4px black;
+}
+.e-content{
+    border: none;
+    width: 38%;
+    height: 75%;
+    position: absolute;
+    right: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(122, 122, 122);
+    box-shadow: 2px 2px 4px black;
+}
+.p-container h1{
+    padding: 20px 0 20px 0 ;
+    text-align: center;
+    border-bottom: 2px red solid;
+    margin: 0 60px 0 60px;
+    text-shadow: 1px 1px 2px beige;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 100px 10px 100px;
+}
+.links h2 a{
+    color: lightblue;
+    text-shadow: 1px 1px 2px black;
+}
+.links h2 a:hover{
+    color: rgba(215, 0, 0, 0.847);
+}
+.edits{
+ border: none;
+ margin:2em 7em 0 8em;
+}
+.names{
+    padding: 5px;
+}
+ .save{
+    position: absolute;
+    bottom: 3%;
+    right: 48%;
+    padding: 8px 15px 8px 15px;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+@media only screen and (max-width: 740px){
+    .p-container{
+        height: 140vh;
+    }
+    .e-content{
+        position: absolute;
+        right: 10%;
+        width: 80%;
+        height: 100vh;
+    }
+    .edits{
+        position: relative;
+        width: 60%;
+        right: 15%;
+    }
+    .l-space{
+        width: 100%;
+    }
+    
+    .p-content{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        height: 100vh;
+    }
+    .edits{
+        position: relative;
+        width: 60%;
+        right: 15%;
+    }
+    .l-space{
+        width: 100%;
+    }
+
+}
+
+/* Recover password */
+
+.r-content{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+.email{
+    padding: 11px 0 11px 11px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+@media only screen and (max-width: 740px) {  
+        .content{
+            position: relative;
+            height: 170vh;
+            width: 100%;
+        }
+        .content_b{
+            position: relative;
+            height: 160vh;
+            width: 100%;
+        }
+        .col-4b{
+            position: absolute;
+            right: 3%;
+            width: 90%;
+            bottom: 10%;
+        }
+        .navbar{
+            display: block;
+            z-index: 2;
+        }
+        .container{
+            width: 100%;
+            height: 120vh;
+            left: 10%;
+            position: absolute;
+        }
+        .row{
+            justify-content: space-around;
+            padding-bottom: 25em;
+            margin-right: 5em;
+        }
+        .navbar.active {
+         left: 0%;
+         }    
+         .navbar{
+            width: 3%;
+         }
+         .navbar ul{
+            display: block;
+            position: fixed;
+            left: -100%;
+            top: 4rem;
+            flex-direction: column;
+            background:linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7));
+            width: 100%;
+            height: 100vh;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.5s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+          }
+        
+          .navbar ul.active {
+            left: 0%;
+          }
+                 
+        .hambuger {
+            display: block;
+            cursor: pointer;
+          }
+        
+          .hambuger.active .bar:nth-child(2) {
+            opacity: 0;
+          }
+        
+          .hambuger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+          }
+        
+          .hambuger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+          .footer{
+            position: absolute;
+            left: 25%;
+            bottom: 0%;
+        }
+        }
+    
+
+
